@@ -1,5 +1,5 @@
 import Combo from "./img/combo.png"
-Import Navlogo from "./img.logo2.png"
+import Navlogo from "./img/logo2.png"
 function App() {
   return (
     <div className="Conteiner">
