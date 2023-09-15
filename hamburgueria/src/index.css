@@ -1,4 +1,4 @@
-.combo
+.slide-item
 {
     width: 100vw;
     height: 85vh;
@@ -10,7 +10,6 @@
     width: 98.85vw;
     height: 85vh;
     text-align: center;
-    background-color: blue;
 }
 
 .sobrenos
@@ -18,7 +17,6 @@
     width: 98.85vw;
     height: 85vh;
     text-align: center;
-    background-color: green;
 }
 
 .contatenos
@@ -26,17 +24,13 @@
     width: 98.85vw;
     height: 85vh;
     text-align: center;
-    background-color: red;
 }
 
 body
 {
     background-attachment: fixed;
-    background-image: linear-gradient(to bottom, #482a03, #4c2815, #4b2821, #472b2b, #402e32);
-    margin-top: 0px;
-    margin-right: 0px;
-    margin-left: 0px;
-    margin-bottom: 0px;
+    background-image: linear-gradient(to bottom, #724102, #82531f, #916537, #a0774f, #ae8a68);
+    margin: 0;
     overflow-x: hidden;
 }
 
@@ -57,7 +51,7 @@ body
     position: fixed;
     top: 0;
     background: #402e32;
-    opacity: 0.9;
+    opacity: 0.8;
     z-index: 999;
     width: 100%;
     padding-top: 15px;
