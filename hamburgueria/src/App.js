@@ -1,11 +1,11 @@
 import Combo from "./img/combo.png"
-Import Navlogo from "./img.logo2.png"
+import Navlogo from "./img/logo2.png"
 function App() {
   return (
     <div className="Conteiner">
-      <div id="topo">
-        <div id="navbar">
-          <img src={Navlogo} id="imgnav"></img>
+      <div className="topo">
+        <div className="navbar">
+          <img src={Navlogo} className="imgnav" alt="logo" />
           <ul>
             <button>Delivery</button>
             <button>Cupons</button>
