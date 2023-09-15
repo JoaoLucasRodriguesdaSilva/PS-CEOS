@@ -1,23 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import Combo from "./img/combo.png"
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="Conteiner">
+      <img className="combo" src={Combo} alt="Combo1" title="Combo1" />
+      <div className="produtos">
+        <h1>Cards Produtos</h1>
+      </div>
+      <div className="sobrenos">
+        <h1>Sobre nós</h1>
+      </div>
+      <div className="contatenos">
+        <h1>Contate-nos</h1>
+      </div>
     </div>
   );
 }

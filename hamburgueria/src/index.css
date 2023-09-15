@@ -1,13 +1,31 @@
-body {
+body{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.combo{
+  width: 100vw;
+  height: 85vh;
+}
+
+.produtos{
+  margin: 0;
+  width: 98.85vw;
+  height: 85vh;
+  text-align: center;
+  background-color: blue;
+}
+
+.sobrenos{
+  width: 98.85vw;
+  height: 85vh;
+  text-align: center;
+  background-color: green;
+}
+
+.contatenos{
+  width: 98.85vw;
+  height: 85vh;
+  text-align: center;
+  background-color: red;
 }
