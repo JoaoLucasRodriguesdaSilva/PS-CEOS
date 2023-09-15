@@ -1,31 +1,99 @@
-body{
-  margin: 0;
-  overflow-x: hidden;
+.slide-item
+{
+    width: 100vw;
+    height: 85vh;
 }
 
-.combo{
-  width: 100vw;
-  height: 85vh;
+.produtos
+{
+    margin: 0;
+    width: 98.85vw;
+    height: 85vh;
+    text-align: center;
 }
 
-.produtos{
-  margin: 0;
-  width: 98.85vw;
-  height: 85vh;
-  text-align: center;
-  background-color: blue;
+.sobrenos
+{
+    width: 98.85vw;
+    height: 85vh;
+    text-align: center;
 }
 
-.sobrenos{
-  width: 98.85vw;
-  height: 85vh;
-  text-align: center;
-  background-color: green;
+.contatenos
+{
+    width: 98.85vw;
+    height: 85vh;
+    text-align: center;
 }
 
-.contatenos{
-  width: 98.85vw;
-  height: 85vh;
-  text-align: center;
-  background-color: red;
+body
+{
+    background-attachment: fixed;
+    background-image: linear-gradient(to bottom, #724102, #82531f, #916537, #a0774f, #ae8a68);
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.navbar
+{
+    height: 20px;
+    width: 1100px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.topo
+{
+    position: fixed;
+    top: 0;
+    background: #402e32;
+    opacity: 0.8;
+    z-index: 999;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.imgnav
+{
+    float:left;
+    width: 90px;
+    height: 85px;
+    border-color: transparent;
+    padding-right: 30px;
+}
+
+ul
+{
+    list-style-type: none;
+    margin: auto;
+    padding: 0;
+    overflow: hidden;
+}
+
+button
+{
+    display: inline-block;
+    background-color: transparent;
+    border-color: transparent;
+    color:#FFF7ED;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size:large;
+    margin-left: 35px;
+    margin-right: 35px;
+    transition-duration: 0.4s;
+    cursor:pointer;
+    object-fit: contain;
+}
+
+button:hover
+{
+    color: #F7C99E;
+    border-bottom-color: #F7C99E;
+    border-bottom:1px, solid;
 }
