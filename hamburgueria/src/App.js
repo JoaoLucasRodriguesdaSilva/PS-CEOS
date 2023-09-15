@@ -1,3 +1,4 @@
+import {FaFacebook, FaInstagram, FaLinkedin} from 'react-icons/fa'
 import {register} from 'swiper/element/bundle'
 import 'swiper/css'
 import 'swiper/css/navigation'
@@ -53,6 +54,20 @@ const data = [
       </div>
       <div className="contatenos">
         <h1>Contate-nos</h1>
+      </div>
+      <div className='footer'>
+        <ul className='redessociais'>
+          <li className='marca'>
+            <FaFacebook size={50}/>
+            <p className='conta'>SaborRealOficial</p>
+          </li>
+          <li className='marca'>
+            <FaInstagram size={50}/>
+          </li>
+          <li className='marca'>
+            <FaLinkedin size={50}/>
+          </li>
+        </ul>
       </div>
     </div>
   );
