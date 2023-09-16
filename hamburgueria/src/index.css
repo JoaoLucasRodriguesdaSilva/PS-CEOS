@@ -4,20 +4,7 @@
     height: 85vh;
 }
 
-.produtos
-{
-    margin: 0;
-    width: 98.85vw;
-    height: 85vh;
-    text-align: center;
-}
 
-.sobrenos
-{
-    width: 98.85vw;
-    height: 85vh;
-    text-align: center;
-}
 
 .contatenos
 {
@@ -96,4 +83,36 @@ button:hover
     color: #F7C99E;
     border-bottom-color: #F7C99E;
     border-bottom:1px, solid;
+}
+
+.aboutus{
+    padding: 10rem 9% 2rem;
+    flex-direction: column;
+    color: #FFF7ED;
+    justify-content: center;
+    align-items: center;
+    padding-left: 1;
+    padding-right: 1;
+    padding-top: 0;
+    padding-bottom: 0;
+    max-height:700px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7), transparent), url('./img/Hero1.png');
+    background-size: cover; 
+    background-position: center center;
+    height: 100%;
+}
+.sobrenos {
+    color:#887863;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size:large;
+    text-align: center;
+    flex: 1;
+    width: 55%;
+    padding: 1rem;
+    max-height: none;
+}
+.titulo-aboutus{
+    color: #d89037;
+    text-align: center;
 }
