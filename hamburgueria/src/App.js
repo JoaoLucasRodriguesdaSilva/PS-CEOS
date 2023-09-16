@@ -45,12 +45,16 @@ const data = [
           </SwiperSlide>
         ))}
       </Swiper>
-      <div className="produtos">
-        <h1>Cards Produtos</h1>
-      </div>
-      <div className="sobrenos">
-        <h1>Sobre nós</h1>
-      </div>
+      
+      <section Class="aboutus" id="aboutus">
+        <div Class="sobrenos">
+          <h1 Class="titulo-aboutus">Nossa História</h1>
+          <p>Fundada em 2014, a Hamburgueria Sabor Real nasceu da paixão por criar hambúrgueres autênticos e saborosos que encantam o paladar de nossos clientes. Desde o início, nosso compromisso foi servir não apenas hambúrgueres, mas experiências memoráveis de sabor.</p>
+          <h2 Class="titulo-aboutus">Nossa Missão</h2>
+          <p>Criar hambúrgueres excepcionais que unam a tradição com a inovação. Usamos apenas os ingredientes mais frescos e selecionados, grelhamos nossos hambúrgueres com carinho e servimos com um toque de criatividade que cativa o coração e o estômago de todos que nos visitam.</p>
+        </div>
+      </section>
+
       <div className="contatenos">
         <h1>Contate-nos</h1>
       </div>
