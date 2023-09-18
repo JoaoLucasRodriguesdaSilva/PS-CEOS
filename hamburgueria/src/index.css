@@ -33,6 +33,25 @@ body
     align-items: center;
 }
 
+.footer
+{
+    background-color: saddlebrown;
+}
+
+.marca
+{
+    display: inline-block;
+    width: 300px;
+}
+
+.conta
+{
+    display: inline-block;
+    position: absolute;
+    text-align: center;
+    font-size: x-large;
+}
+
 .topo
 {
     position: fixed;
