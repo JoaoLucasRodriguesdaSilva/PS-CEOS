@@ -1,3 +1,4 @@
+import {BsFacebook, BsInstagram, BsLinkedin} from 'react-icons/bs'
 import {register} from 'swiper/element/bundle'
 import 'swiper/css'
 import 'swiper/css/navigation'
@@ -58,6 +59,26 @@ const data = [
       <div className="contatenos">
         <h1>Contate-nos</h1>
       </div>
+
+      <div className='footer'>
+          <div className='redessociais'>
+            <BsFacebook size={25} className='icone'/>
+            <p className='p'>SaborRealOficial</p>
+            <BsInstagram size={25} className='icone'/>
+            <p className='p'>@SaborRealOficial</p>
+            <BsLinkedin size={25} className='icone'/>
+            <p className='p'>SaborRealOficial</p>
+          </div>
+
+          <div className='colunas'>
+            <div className='coluna1'>
+              <h3 className='nos'>Sabor Real</h3>
+              <p>Arquitetura</p>
+              <p>Localização</p>
+            </div>
+          </div>
+      </div>
+
     </div>
   );
 }
