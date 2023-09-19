@@ -45,6 +45,25 @@ const data = [
           </SwiperSlide>
         ))}
       </Swiper>
+      <div Class="slider-container">
+        <div Class="slider-content">
+          <div Class="card-wrapper">
+            <div Class="card">
+              <div Class="image-content">
+                <span Class="overlay"></span>
+
+                <div Class="card-image">
+                  <img src='./img/h1card.png' alt="" Class="card-img"/>
+                </div>
+
+                <div Class="">
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       
       <section Class="aboutus" id="aboutus">
         <div Class="sobrenos">

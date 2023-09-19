@@ -116,3 +116,20 @@ button:hover
     color: #d89037;
     text-align: center;
 }
+
+.card-image{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 10%;
+    background-image: url('./img/h1card.jpg');
+    background-size: cover; 
+    background-position: center center;
+}
+.card-image .card-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    
+}
