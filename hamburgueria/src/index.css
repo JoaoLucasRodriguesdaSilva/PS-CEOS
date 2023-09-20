@@ -139,7 +139,7 @@ button:hover
 .footer{
     width: 100vw;
     background-color: #482A03;
-    height: 400px;
+    height: 250px;
 }
 
 .redessociais{
@@ -151,13 +151,14 @@ button:hover
 }
 
 .icone{
-    margin: 17px 0 0 45px;
+    margin: 17px 0 0 70px;
     cursor: pointer;
 }
 
 .redessociais .p{
     margin-top: 15px;
     margin-bottom: 15px;
+    margin-right: 70px;
     cursor: pointer;
     color:black;
     font-family: Arial, Helvetica, sans-serif;
@@ -171,6 +172,27 @@ button:hover
     color:black;
     font-family: Arial, Helvetica, sans-serif;
 }
-.colunas .coluna1 .nos{
-    font-size: 25px;
+
+.colunas .box{
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+.colunas .box .nos{
+    font-size: 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.colunas .box .nos2{
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.colunas p{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
 }

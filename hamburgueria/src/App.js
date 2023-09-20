@@ -71,10 +71,27 @@ const data = [
           </div>
 
           <div className='colunas'>
-            <div className='coluna1'>
-              <h3 className='nos'>Sabor Real</h3>
+            <div className='box'>
+              <h3 className='nos'>SABOR REAL</h3>
               <p>Arquitetura</p>
               <p>Localização</p>
+              <p>Delivery</p>
+            </div>
+            <div className='box'>
+              <h3 className='nos'>RESTAURANTES</h3>
+              <p>Restaurantes próximos</p>
+              <h3 className='nos'>NUTRICIONAL</h3>
+              <p>Tabela Nutricional</p>
+              <p>Alergenicos</p>
+            </div>
+            <div className='box'>
+              <h3 className='nos'>SR NA MÍDIA</h3>
+              <h3 className='nos2'>PARA FAZER EM CASA</h3>
+              <h3 className='nos2'>PROMOÇÕES</h3>
+            </div>
+            <div className='box'>
+              <h3 className='nos'>SR CASHBACK</h3>
+              <h3 className='nos2'>TRABALHE CONOSCO</h3>
             </div>
           </div>
       </div>
