@@ -10,10 +10,23 @@ import Combo from "./img/combo.png"
 import Hero2 from "./img/Hero2.png"
 import Hero3 from "./img/Hero3.png"
 import Navlogo from "./img/logo2.png"
+import CardSlider from './CardSlider'
+import './index.css'
+import React from 'react'
+import teste_lucas_card from "./img/mr mostarda.png"
 
 register();
 
 function App() {
+const data1 = [
+  { id: '1', image: teste_lucas_card },
+  { id: '2', image: teste_lucas_card },
+  { id: '3', image: teste_lucas_card },
+  { id: '4', image: teste_lucas_card },
+  { id: '5', image: teste_lucas_card },
+  { id: '6', image: teste_lucas_card },
+  { id: '7', image: teste_lucas_card },
+]
 const data = [
   {id: '1', image: Combo},
   {id: '2', image: Hero1},
@@ -46,7 +59,6 @@ const data = [
           </SwiperSlide>
         ))}
       </Swiper>
-      
       <section Class="aboutus" id="aboutus">
         <div Class="sobrenos">
           <h1 Class="titulo-aboutus">Nossa História</h1>
@@ -55,7 +67,12 @@ const data = [
           <p>Criar hambúrgueres excepcionais que unam a tradição com a inovação. Usamos apenas os ingredientes mais frescos e selecionados, grelhamos nossos hambúrgueres com carinho e servimos com um toque de criatividade que cativa o coração e o estômago de todos que nos visitam.</p>
         </div>
       </section>
-
+      <div Class="slider_cardapio">
+        <h1 Class="texto_slider">
+          Nosso Cardápio
+        </h1>
+      </div>
+      <CardSlider cards={data1} />
       <div className="contatenos">
         <h1>Contate-nos</h1>
       </div>

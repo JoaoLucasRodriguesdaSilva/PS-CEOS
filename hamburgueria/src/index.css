@@ -4,8 +4,6 @@
     height: 85vh;
 }
 
-
-
 .contatenos
 {
     width: 98.85vw;
@@ -195,4 +193,15 @@ button:hover
     margin-top: 5px;
     margin-bottom: 5px;
     cursor: pointer;
+}
+.slider_cardapio{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    color:#d89037;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size:large;
+    
 }
