@@ -28,10 +28,10 @@ const data = [
           <img src={Navlogo} className="imgnav" alt="logo" />
           <ul>
             <button>Delivery</button>
-            <button>Cupons</button>
-            <button>Menu</button>
-            <button>Restaurantes</button>
-            <button>Trabalhe Conosco</button>
+            <button class="navbotao2">Cupons</button>
+            <button class="navbotao3">Menu</button>
+            <button class="navbotao4">Restaurantes</button>
+            <button class="navbotao5">Trabalhe Conosco</button>
           </ul>
         </div>
       </div>
@@ -56,9 +56,19 @@ const data = [
         </div>
       </section>
 
-      <div className="contatenos">
-        <h1>Contate-nos</h1>
-      </div>
+      <section className="contatenos">
+        <div class="container_formulario">
+          <div class="formulario_header">Fale Conosco</div>
+          <form>
+            <label for="nome"class="texto_formulario">Digite o Seu Nome:</label>
+            <input type="text" id="nome"></input>
+            <label for="mail"class="texto_formulario">Digite o Seu E-mail:</label>
+            <input type="text" id="mail"></input>
+            <label for="mensagem"class="texto_formulario">Digite a Sua Mensagem:<br></br></label>
+            <textarea type="text" id='mensagem' spellCheck="false"></textarea>
+          </form>
+        </div>
+      </section>
 
       <div className='footer'>
           <div className='redessociais'>

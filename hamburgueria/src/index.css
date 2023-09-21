@@ -4,15 +4,6 @@
     height: 85vh;
 }
 
-
-
-.contatenos
-{
-    width: 98.85vw;
-    height: 85vh;
-    text-align: center;
-}
-
 body
 {
     background-attachment: fixed;
@@ -24,7 +15,7 @@ body
 .navbar
 {
     height: 20px;
-    width: 1100px;
+    max-width: 1100px;
     margin-right: auto;
     margin-left: auto;
     padding-top: 15px;
@@ -104,6 +95,31 @@ button:hover
     border-bottom:1px, solid;
 }
 
+@media (max-width:1450px)
+{
+    .navbotao5{
+        display: none;
+    }
+}
+@media (max-width:1090px)
+{
+    .navbotao4{
+        display: none;
+    }
+}
+@media (max-width:800px)
+{
+    .navbotao3{
+        display: none;
+    }
+}
+@media (max-width:610px)
+{
+    .navbotao2{
+        display: none;
+    }
+}
+
 .aboutus{
     padding: 10rem 9% 2rem;
     flex-direction: column;
@@ -136,6 +152,80 @@ button:hover
     text-align: center;
 }
 
+.contatenos{
+    width: 100vw;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+	background-image: url("./img/Hero3.png");
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	height: 100%;
+    backdrop-filter: blur(15px);
+}
+.container_formulario{
+    display:flex;
+    flex-direction: column;
+    width: 700px;
+    height: 80vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.formulario_header{
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: 15px;
+    margin-bottom:30px;
+    font-size: x-large;
+    color:#d89037;
+    font-family:Arial, Helvetica, sans-serif;
+    height:fit-content;
+}
+
+input[type=text], select {
+    width: 40%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: flex;
+    border: 1px solid black;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    align-self: center;
+}
+
+.texto_formulario{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    color:#d89037;
+    display: flex;
+    width:fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#mensagem{
+    width: 50%;
+    height:200px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    display: flex;
+    box-sizing: border-box;
+    margin: 8px 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    border-radius: 4px;
+    align-self: center;
+}
 .footer{
     width: 100vw;
     background-color: #482A03;
