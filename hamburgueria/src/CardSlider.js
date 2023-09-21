@@ -68,11 +68,11 @@ const CardSlider = ({ cards }) => {
 
 
   return (
-    <div className="card-slider">
+    <div className="card-slider2">
       <Slider {...settings}>
         {cards.map((card) => (
-          <div key={card.id} className="card">
-            <img src={card.image} alt={`Card ${card.id}`} />
+          <div key={card.id} className="card2">
+            <img src={card.image} alt={`Card ${card.id}`} className="card-image-slider"/>
           </div>
         ))}
       </Slider>
