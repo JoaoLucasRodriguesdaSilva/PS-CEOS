@@ -1,4 +1,5 @@
 .card-slider {
+  outline: none;
   justify-content: space-between;
   padding: 0px 30px; 
   width: 100%;
@@ -6,6 +7,7 @@
 
 }
 .card {
+  outline: none;
   padding: 30px 0px;
   text-align: center;
   width: 250px; 
@@ -27,7 +29,7 @@ img {
   transform: translateY(-50%);
   width: 60px; 
   height: 60px;
-  background-color: #956e0e; 
+  background-color: transparent; 
   color: #fff; 
   border: none;
   border-radius: 50%; 
@@ -37,9 +39,16 @@ img {
   align-items: center;
   font-size: 20px;
   z-index: 3; 
+  transition: background-color 0.3s ease;
+  transition: color 0.3s ease;
 }
+.custom-arrow:hover {
+  background-color: #ffffff; /* Cor de fundo ao passar o mouse */
+  color: #000; /* Cor do texto ao passar o mouse */
+}
+
 .custom-next-arrow {
-  right: 90px; 
+  right: 87px; 
   
 }
 .custom-prev-arrow {
