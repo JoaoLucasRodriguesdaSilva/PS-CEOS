@@ -4,8 +4,6 @@
     height: 85vh;
 }
 
-
-
 .contatenos
 {
     width: 98.85vw;
@@ -116,20 +114,14 @@ button:hover
     color: #d89037;
     text-align: center;
 }
-
-.card-image{
-    position: relative;
-    height: 150px;
-    width: 150px;
-    border-radius: 10%;
-    background-image: url('./img/h1card.jpg');
-    background-size: cover; 
-    background-position: center center;
-}
-.card-image .card-img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    border-radius: 50%;
+.slider_cardapio{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    color:#d89037;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size:large;
     
 }
