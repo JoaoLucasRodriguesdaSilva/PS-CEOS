@@ -211,7 +211,7 @@ form{
     margin-top: 10px;
     margin-bottom:15px;
     font-size: xx-large;
-    color:#d89037;
+    color:#ffffff;
     font-family:Arial, Helvetica, sans-serif;
     height:fit-content;
 }
@@ -235,7 +235,7 @@ input[type=text], select {
 .texto_formulario{
     font-family: Arial, Helvetica, sans-serif;
     font-size: large;
-    color:#F7C99E;
+    color:#ffffff;
     display: flex;
     width:fit-content;
     margin-left: auto;
