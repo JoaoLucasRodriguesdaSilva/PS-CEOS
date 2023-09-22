@@ -316,6 +316,7 @@ input[type=text], select {
 .icone{
     margin: 17px 0 0 70px;
     cursor: pointer;
+    color: rgb(185, 117, 14);
 }
 
 .redessociais .p{
@@ -326,6 +327,7 @@ input[type=text], select {
     color:black;
     font-family: Arial, Helvetica, sans-serif;
     transition-duration: 0.4s;
+    color: rgb(185, 117, 14);
 }
 
 .colunas{

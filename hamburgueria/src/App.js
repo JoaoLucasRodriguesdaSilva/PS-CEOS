@@ -1,4 +1,5 @@
-import {BsFacebook, BsInstagram, BsLinkedin} from 'react-icons/bs'
+import {BsFacebook, BsLinkedin} from 'react-icons/bs'
+import {AiFillInstagram} from 'react-icons/ai'
 import {register} from 'swiper/element/bundle'
 import 'swiper/css'
 import 'swiper/css/navigation'
@@ -85,6 +86,7 @@ function envio(event) {
         slidesPerView={1}
         pagination={{clickable: true}}
         navigation
+        className='swiper'
       >
         {data.map((item) => (
           <SwiperSlide key={item.id}>
@@ -112,9 +114,9 @@ function envio(event) {
       <CardSlider cards={data1} />
       <section className="contatenos" id="contatenos">
         <div class="container_formulario">
-          <div class="formulario_header">Fale Conosco</div>
 
           <form onSubmit={envio}>
+            <div class="formulario_header">Fale Conosco</div>
             <label for="nome"class="texto_formulario">Digite o Seu Nome:</label>
             <input type="text" id="nome" name='nome' onChange={mudanca}/>
             {erros.nome && <p class="erro">{erros.nome}</p>}
@@ -139,7 +141,7 @@ function envio(event) {
           <div className='redessociais'>
             <BsFacebook size={25} className='icone'/>
             <p className='p'>SaborRealOficial</p>
-            <BsInstagram size={25} className='icone'/>
+            <AiFillInstagram size={30} className='icone'/>
             <p className='p'>@SaborRealOficial</p>
             <BsLinkedin size={25} className='icone'/>
             <p className='p'>SaborRealOficial</p>
