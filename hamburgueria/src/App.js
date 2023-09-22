@@ -10,7 +10,9 @@ import Combo from "./img/combo.png"
 import Hero2 from "./img/Hero2.png"
 import Hero3 from "./img/Hero3.png"
 import Navlogo from "./img/logo2.png"
-
+import React from 'react'
+import { useState } from 'react'
+import validacao from './validacao'
 register();
 
 function App() {
@@ -21,21 +23,38 @@ const data = [
   {id: '4', image: Hero3}
 ]
 
+const [valores, setValores] = useState({
+  nome: '',
+  email: '',
+  mensagem: ''
+})
+
+function mudanca(event) {
+  const newObj = {...valores, [event.target.name]: event.target.value}
+  setValores(newObj)
+}
+
+const [erros,setErros] = useState({})
+
+function envio(event) {
+  event.preventDefault();
+  setErros(validacao(valores));
+}
+
   return (
     <div className="Conteiner">
       <div className="topo">
         <div className="navbar">
           <img src={Navlogo} className="imgnav" alt="logo" />
           <ul>
-            <button>Delivery</button>
-            <button class="navbotao2">Cupons</button>
-            <button class="navbotao3">Menu</button>
-            <button class="navbotao4">Restaurantes</button>
-            <button class="navbotao5">Trabalhe Conosco</button>
+            <button id="navbutton"><a href='#hero'>Delivery</a></button>
+            <button class="nav2" id="navbutton"><a href='#aboutus'class="nav2">Sobre Nós</a></button>
+            <button class="nav3" id="navbutton">Menu</button>
+            <button class="nav4" id="navbutton"><a href='#contatenos'class="nav4">Fale Conosco</a></button>
           </ul>
         </div>
       </div>
-      <Swiper
+      <Swiper id='hero'
         slidesPerView={1}
         pagination={{clickable: true}}
         navigation
@@ -56,17 +75,28 @@ const data = [
         </div>
       </section>
 
-      <section className="contatenos">
+      <section className="contatenos" id="contatenos">
         <div class="container_formulario">
           <div class="formulario_header">Fale Conosco</div>
-          <form>
+
+          <form onSubmit={envio}>
             <label for="nome"class="texto_formulario">Digite o Seu Nome:</label>
-            <input type="text" id="nome"></input>
-            <label for="mail"class="texto_formulario">Digite o Seu E-mail:</label>
-            <input type="text" id="mail"></input>
+            <input type="text" id="nome" name='nome' onChange={mudanca}/>
+            {erros.nome && <p class="erro">{erros.nome}</p>}
+
+            <label for="email" class="texto_formulario">Digite o Seu E-mail:</label>
+            <input type="text" id="email" name='email' onChange={mudanca}/>
+            {erros.email && <p class="erro">{erros.email}</p>}
+
             <label for="mensagem"class="texto_formulario">Digite a Sua Mensagem:<br></br></label>
-            <textarea type="text" id='mensagem' spellCheck="false"></textarea>
+            <textarea type="text" id='mensagem' spellCheck="false" name='mensagem' onChange={mudanca}/>
+            {erros.mensagem && <p class="erro">{erros.mensagem}</p>}
+
+            <div class='container_envio'>
+              <button class="enviar_form">Enviar</button>
+            </div>
           </form>
+
         </div>
       </section>
 

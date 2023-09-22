@@ -1,3 +1,7 @@
+html{
+    scroll-behavior: smooth;
+}
+
 .slide-item
 {
     width: 100vw;
@@ -72,7 +76,7 @@ ul
     overflow: hidden;
 }
 
-button
+#navbutton
 {
     display: inline-block;
     background-color: transparent;
@@ -88,7 +92,7 @@ button
     object-fit: contain;
 }
 
-button:hover
+#navbutton:hover
 {
     color: #F7C99E;
     border-bottom-color: #F7C99E;
@@ -97,27 +101,42 @@ button:hover
 
 @media (max-width:1450px)
 {
-    .navbotao5{
+    .nav5{
         display: none;
     }
 }
 @media (max-width:1090px)
 {
-    .navbotao4{
+    .nav4{
         display: none;
     }
 }
 @media (max-width:800px)
 {
-    .navbotao3{
+    .nav3{
         display: none;
     }
 }
 @media (max-width:610px)
 {
-    .navbotao2{
+    .nav2{
         display: none;
     }
+}
+
+a:link{
+    text-decoration: none;
+    color:#FFF7ED
+}
+
+a:visited{
+    text-decoration: none;
+    color:#FFF7ED;
+}
+a:hover{
+    color:#F7C99E;
+    border-bottom-color: #F7C99E;
+    border-bottom:1px, solid;
 }
 
 .aboutus{
@@ -153,16 +172,20 @@ button:hover
 }
 
 .contatenos{
+    position:relative;
     width: 100vw;
     height: 85vh;
     display: flex;
     align-items: center;
-	background-image: url("./img/Hero3.png");
+    margin-top: 5px;
+    margin-bottom: 5px;
+	background-image: url("./img/ff165dc6-5f6f-47c3-8f1e-d1d7b520a407.png");
 	background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 	height: 100%;
-    backdrop-filter: blur(15px);
+    object-fit: contain;
+    overflow: auto;
 }
 .container_formulario{
     display:flex;
@@ -176,16 +199,16 @@ button:hover
 .formulario_header{
     margin-left:auto;
     margin-right:auto;
-    margin-top: 15px;
-    margin-bottom:30px;
+    margin-top: 10px;
+    margin-bottom:15px;
     font-size: x-large;
-    color:#d89037;
+    color:black;
     font-family:Arial, Helvetica, sans-serif;
     height:fit-content;
 }
 
 input[type=text], select {
-    width: 40%;
+    width: 300px;
     padding: 12px 20px;
     margin: 8px 0;
     display: flex;
@@ -203,7 +226,7 @@ input[type=text], select {
 .texto_formulario{
     font-family: Arial, Helvetica, sans-serif;
     font-size: large;
-    color:#d89037;
+    color:black;
     display: flex;
     width:fit-content;
     margin-left: auto;
@@ -212,8 +235,8 @@ input[type=text], select {
 }
 
 #mensagem{
-    width: 50%;
-    height:200px;
+    width: 45%;
+    height: 170px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: large;
     display: flex;
@@ -224,8 +247,50 @@ input[type=text], select {
     margin-bottom: 10px;
     border: 1px solid black;
     border-radius: 4px;
-    align-self: center;
 }
+
+.submit
+{
+    margin-left:350px;
+    margin-right: 350px;
+    padding: 5px;
+}
+
+.erro{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: red;
+    font-family: Arial, Helvetica, sans-serif;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+}
+
+.container_envio{
+    width: 100%;
+    height: fit-content;
+}
+
+.enviar_form{
+    position:relative;
+    left:326.25px;
+    padding: 5px;
+    border: 1px solid black;
+    height: fit-content;
+    width: fit-content;
+    border-radius: 10%;
+    color:black;
+    background-color: #d89037;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    
+}
+
+.enviar_form:hover{
+    transform: scale(1.1);
+}
+
 .footer{
     width: 100vw;
     background-color: #482A03;
