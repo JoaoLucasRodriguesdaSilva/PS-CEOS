@@ -1,3 +1,7 @@
+html{
+    scroll-behavior: smooth;
+}
+
 .slide-item
 {
     width: 100vw;
@@ -79,7 +83,7 @@ ul
     overflow: hidden;
 }
 
-button
+#navbutton
 {
     display: inline-block;
     background-color: transparent;
@@ -95,9 +99,49 @@ button
     object-fit: contain;
 }
 
-button:hover
+#navbutton:hover
 {
     color: #F7C99E;
+    border-bottom-color: #F7C99E;
+    border-bottom:1px, solid;
+}
+
+@media (max-width:1450px)
+{
+    .nav5{
+        display: none;
+    }
+}
+@media (max-width:1090px)
+{
+    .nav4{
+        display: none;
+    }
+}
+@media (max-width:800px)
+{
+    .nav3{
+        display: none;
+    }
+}
+@media (max-width:610px)
+{
+    .nav2{
+        display: none;
+    }
+}
+
+a:link{
+    text-decoration: none;
+    color:#FFF7ED
+}
+
+a:visited{
+    text-decoration: none;
+    color:#FFF7ED;
+}
+a:hover{
+    color:#F7C99E;
     border-bottom-color: #F7C99E;
     border-bottom:1px, solid;
 }
@@ -132,6 +176,127 @@ button:hover
 .titulo-aboutus{
     color: #d89037;
     text-align: center;
+}
+
+.contatenos{
+    position:relative;
+    width: 100vw;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+	background-image: url("./img/img_form.png");
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	height: 100%;
+    object-fit: contain;
+    overflow: auto;
+}
+.container_formulario{
+    display:flex;
+    flex-direction: column;
+    width: 700px;
+    height: 80vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+form{
+    background-color: none;
+}
+
+.formulario_header{
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: 10px;
+    margin-bottom:15px;
+    font-size: xx-large;
+    color:#d89037;
+    font-family:Arial, Helvetica, sans-serif;
+    height:fit-content;
+}
+
+input[type=text], select {
+    width: 300px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: flex;
+    border: 1px solid black;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    align-self: center;
+}
+
+.texto_formulario{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    color:#F7C99E;
+    display: flex;
+    width:fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#mensagem{
+    width: 45%;
+    height: 170px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    display: flex;
+    box-sizing: border-box;
+    margin: 8px 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+.submit
+{
+    margin-left:350px;
+    margin-right: 350px;
+    padding: 5px;
+}
+
+.erro{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: red;
+    font-family: Arial, Helvetica, sans-serif;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+}
+
+.container_envio{
+    width: 100%;
+    height: fit-content;
+}
+
+.enviar_form{
+    position:relative;
+    padding: 5px;
+    border: 1px solid black;
+    height: fit-content;
+    width: fit-content;
+    border-radius: 10%;
+    color:black;
+    background-color: #d89037;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    
+}
+
+.enviar_form:hover{
+    transform: scale(1.1);
 }
 
 .footer{
@@ -180,6 +345,7 @@ button:hover
     font-size: 20px;
     margin-bottom: 10px;
     cursor: pointer;
+    color: rgb(185, 117, 14);
 }
 
 .colunas .box .nos2{
@@ -187,12 +353,14 @@ button:hover
     margin-bottom: 10px;
     margin-top: 30px;
     cursor: pointer;
+    color: rgb(185, 117, 14);
 }
 
 .colunas p{
     margin-top: 5px;
     margin-bottom: 5px;
     cursor: pointer;
+    color: rgb(179, 161, 85);
 }
 .slider_cardapio{
     display: flex;
